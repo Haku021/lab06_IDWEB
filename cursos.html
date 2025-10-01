@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Inscripción a los cursos</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Boletin de noticias</a></li>
+                <br>
+                <li><a href="registro.html">Subscribirse al boletin</a></li>
+                <br>
+                <li><a href="validacion.html">Formulario con validaciones</a></li>
+                <br>
+                <li><a href="lenguajes.html">Formulario de preferencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <form action="#" method="post"></form>
+        <fieldset>
+
+            <legend>Formulario de inscripción a los cursos</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br><br>
+
+            <label for="dni">Documento de identidad:</label>
+            <input type="text" id="dni" name="dni" pattern="\d{8}" placeholder="45548932" required>
+            <br><br>
+
+            <label for="correo">Correo electronico:</label>
+            <input type="email" name="correo" id="correo" placeholder="ejemplo@gmail.com" required>
+            <br><br>
+
+            <label for="curso">Selección de curso:</label>
+            
+                <select name="curso" id="curso" required>
+                    <option value="Dsoo">Software orientado a objetos</option>
+                    <option value="Realidad">Realidad nacional</option>
+                    <option value="narrativa">Taller de narrativa</option>
+                </select>
+            <br><br>
+
+            <label for="modalidad">Modalidad</label>
+                <select name="modalidad" id="modalidad" required>
+                    <option value="virtual">Virtual</option>
+                    <option value="prescencial">Prescencial</option>
+                </select>
+            <br><br>
+
+            <label for="disponible">Horarios disponibles:</label>
+                <select name="disponible[]" id="disponible" multiple size="3" required>
+                    <option value="Mañana">Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noche">Noche</option>
+                </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </fieldset>           
+        </form>                                                                       
+</body>
+</html>
